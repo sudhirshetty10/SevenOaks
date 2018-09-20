@@ -1,0 +1,259 @@
+
+
+/*------------------------------------*\
+    Flaunt JS Navigation
+\*------------------------------------*/
+
+.nav {clear:right;
+	float:right;margin-top:28px;
+}
+.nav-list {
+	text-align:left;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+	margin-right:59px; 
+}
+.nav-item:last-child{margin-right: 0px;}
+
+.nav-item a {
+	display:block;
+	text-decoration: none;
+    font-weight:bold;
+    color:#668333;
+    text-transform:uppercase;
+    border-bottom: 5px solid #fff; }
+
+.nav .nav-list li.active a{color: #4999af;}
+
+.nav-item > a:hover {
+	color: #4999af;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:180px;
+    
+	
+}
+.nav-submenu-item a {
+	background:floralwhite;
+	display:block;
+	padding:15px;
+	border-bottom: none;
+	
+}
+.nav ul li ul li{ border-bottom: 1px solid #ccc; }
+.nav ul li ul li:last-child{border-bottom: none;}
+
+.nav-submenu-item a:hover {
+	color: #4999af;
+
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	right:0;
+	background:#3D3D3B url(../images/nav.svg) no-repeat center center;
+	background-size:18px;
+	height:50px;
+	width:50px;
+}
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	border-left:1px solid #8B2870;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:49px;
+	width:50px;
+	background:#000 url(../images/drop.svg) no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#6E1656;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+
+
+@media screen and (max-width:320px){
+.nav-mobile {
+	margin-top:20px;
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+		margin-top:8px; 
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+		border-left:none; 
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+
+
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+	.nav-mobile {
+		display:block;
+		margin-top:35px;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.nav-mobile {
+		display:block;
+		margin-top:40px;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.nav-mobile {
+		display:block;
+		margin-top:40px;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+
+
+}
